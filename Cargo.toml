@@ -1,0 +1,19 @@
+[package]
+name = "sound-test"
+version = "0.1.0"
+authors = ["= <=>"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+dioxus = { version = "0.5", features = ["web"] }
+story_lib ={ git = "https://github.com/dolto/dolto-story-lib.git", version = "*"}
+
+# Debug
+dioxus-logger = "0.5.1"
+gloo-timers = { version = "0.3.0", features = ["futures"] }
+getrandom = { version = "0.2.15", features = ["js"] }
+rand = { version = "0.8.5" }
+reqwest = "0.12.5"
